@@ -7,9 +7,10 @@ import java.io.IOException;
 import java.util.Iterator;
 
 public class AssertTest {
-    public static void getImgWidthAndHeight(String args[]) throws Exception {
+    public static void main(String args[]) throws Exception {
+        String path=AssertTest.class.getResource("bigmap.bmp").getPath();
         // 读入 文件
-        File file234 = new File("C:\\Users\\Administrator.DESKTOP-PTJKBI6\\Pictures\\世界地图\\世界地图.bmp");
+        File file234 = new File(path);
         FileInputStream file = new FileInputStream(file234);
 
 
