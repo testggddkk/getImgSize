@@ -11,8 +11,8 @@ public class FastImageInfo {
     private String mimeType;
 
     public static void main(String[] args) throws IOException {
-        File file=new File("C:\\Users\\Administrator.DESKTOP-PTJKBI6\\Pictures\\世界地图\\世界地图.bmp");
-        FastImageInfo fastImageInfo=new FastImageInfo(file);
+        String path=AssertTest.class.getResource("bigmap.bmp").toString();
+        FastImageInfo fastImageInfo=new FastImageInfo(new File(path));
         System.out.println(fastImageInfo);
     }
 
